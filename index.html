@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101511">
+  <meta name="description" content="Jabar Running Festival — rayakan semangat berlari, kebersamaan, dan gaya hidup aktif.">
+  <title>Jabar Running Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#101511;--ink2:#171e19;--paper:#f4f3ed;--white:#fff;--red:#d9272e;--lime:#d7f36a;--muted:#a9b1a9;--line:rgba(255,255,255,.14);--radius:24px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+    .nav{position:absolute;z-index:5;top:0;left:0;width:100%;color:#fff;border-bottom:1px solid rgba(255,255,255,.15)}.nav-inner{height:86px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.04em;font-size:13px}.brand img{width:48px;height:48px;object-fit:contain;border-radius:50%;background:#fff}.nav-links{display:flex;align-items:center;gap:30px;font-size:13px;color:#e3e8e2}.nav-links a:hover{color:var(--lime)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:999px;background:var(--lime);color:var(--ink);font-weight:800;font-size:13px;transition:.2s;border:0;cursor:pointer}.nav-cta:hover,.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}.menu-btn{display:none;background:none;border:1px solid var(--line);color:#fff;border-radius:12px;padding:9px 12px}
+    .hero{min-height:760px;background:var(--ink);position:relative;display:flex;align-items:center;overflow:hidden;color:#fff}.hero-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.48}.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,15,11,.94) 0%,rgba(9,15,11,.72) 48%,rgba(9,15,11,.2) 100%),linear-gradient(0deg,rgba(9,15,11,.75),transparent 45%)}.hero-content{position:relative;z-index:1;padding:150px 0 100px;max-width:760px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--lime);font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.eyebrow:before{content:"";width:28px;height:2px;background:var(--lime)}h1,h2,h3,p{margin-top:0}h1{font-family:Manrope,sans-serif;font-size:clamp(48px,8vw,100px);line-height:.98;letter-spacing:-.065em;margin:22px 0 24px;font-weight:800}h1 span{color:var(--lime)}.hero-copy{max-width:530px;color:#d5ddd5;font-size:17px;line-height:1.8;margin-bottom:32px}.hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.btn-outline{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border:1px solid rgba(255,255,255,.45);border-radius:999px;color:#fff;font-size:13px;font-weight:700}.btn-outline:hover{border-color:var(--lime);color:var(--lime)}.hero-note{margin-top:64px;display:flex;align-items:center;gap:14px;color:#c4ccc4;font-size:12px}.hero-note b{color:#fff}.pulse{width:8px;height:8px;background:var(--lime);border-radius:50%;box-shadow:0 0 0 6px rgba(215,243,106,.15)}
+    .ticker{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:15px 0;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.13em;font-size:12px}.ticker span{padding:0 25px}.ticker b{color:#ffd7d7}
+    .intro{padding:110px 0 100px}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.intro h2,.section-head h2{font-family:Manrope,sans-serif;font-size:clamp(34px,5vw,58px);line-height:1.08;letter-spacing:-.055em;margin:18px 0}.intro h2 span{color:var(--red)}.intro p{color:#606a61;line-height:1.9;font-size:15px}.intro-visual{position:relative;min-height:430px;border-radius:var(--radius);overflow:hidden;background:#d9ddd4}.intro-visual img{width:100%;height:100%;min-height:430px;object-fit:cover;display:block}.visual-tag{position:absolute;bottom:20px;left:20px;background:var(--lime);padding:13px 17px;border-radius:14px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .features{background:#e9eae2;padding:90px 0}.section-head{max-width:660px;margin-bottom:44px}.section-head p{color:#657067;line-height:1.8}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#fff;border-radius:20px;padding:28px;min-height:220px}.feature-num{font-family:Manrope,sans-serif;font-size:12px;font-weight:800;color:var(--red);letter-spacing:.12em}.feature h3{font-family:Manrope,sans-serif;font-size:21px;letter-spacing:-.04em;margin:35px 0 10px}.feature p{color:#69736a;font-size:13px;line-height:1.8;margin:0}
+    .banner-section{padding:100px 0}.banner{height:430px;border-radius:var(--radius);overflow:hidden;position:relative;background:#252e27}.banner img{width:100%;height:100%;object-fit:cover;display:block}.banner:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,17,12,.65),transparent 85%)}.banner-caption{position:absolute;z-index:1;left:42px;bottom:38px;color:#fff;max-width:520px}.banner-caption small{color:var(--lime);font-weight:800;letter-spacing:.18em;text-transform:uppercase}.banner-caption h2{font:800 clamp(30px,4vw,48px)/1.05 Manrope,sans-serif;letter-spacing:-.05em;margin:12px 0 0}
+    .join{background:var(--ink);color:#fff;padding:100px 0}.join-grid{display:grid;grid-template-columns:1fr .85fr;gap:70px;align-items:center}.join h2{font:800 clamp(38px,5vw,62px)/1.04 Manrope,sans-serif;letter-spacing:-.06em;margin:18px 0}.join h2 span{color:var(--lime)}.join p{color:#b9c2ba;line-height:1.8;max-width:500px}.join-card{background:#1b241d;border:1px solid var(--line);border-radius:22px;padding:30px}.join-card h3{font:800 20px Manrope,sans-serif;margin-bottom:8px}.join-card p{font-size:13px}.field{display:flex;flex-direction:column;gap:8px;margin:18px 0}.field label{font-size:12px;color:#dce3dc;font-weight:700}.field input,.field textarea{width:100%;background:#111812;border:1px solid #354137;border-radius:12px;padding:14px;color:#fff;font:14px "DM Sans",sans-serif;outline:none}.field input:focus,.field textarea:focus{border-color:var(--lime)}.field textarea{resize:vertical;min-height:85px}.join-card .btn{width:100%}.form-note{font-size:11px!important;color:#8f9b90!important;margin:12px 0 0}
+    footer{background:#0b100c;color:#9aa49b;padding:28px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:11px}.footer-brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;letter-spacing:.06em}.footer-brand img{width:34px;height:34px;object-fit:contain;border-radius:50%;background:#fff}
+    @media(max-width:800px){.nav-links{display:none;position:absolute;top:76px;left:22px;right:22px;background:#172019;border:1px solid var(--line);border-radius:16px;padding:20px;flex-direction:column;align-items:flex-start;gap:18px}.nav-links.open{display:flex}.nav-cta{display:none}.menu-btn{display:block}.hero{min-height:700px}.hero-content{padding-top:140px}.intro-grid,.join-grid{grid-template-columns:1fr;gap:35px}.feature-grid{grid-template-columns:1fr}.feature{min-height:unset}.banner{height:340px}.banner-caption{left:24px;bottom:25px}.intro{padding:75px 0}.features,.join{padding:75px 0}.banner-section{padding:75px 0}}
+    @media(max-width:480px){.wrap{width:min(100% - 32px,1160px)}.nav-inner{height:74px}.brand{font-size:10px}.brand img{width:40px;height:40px}.hero{min-height:680px}.hero-copy{font-size:15px}.hero-note{margin-top:45px}.intro-visual,.intro-visual img{min-height:300px}.banner{height:290px}.join-card{padding:22px}.footer-inner{align-items:flex-start;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home" aria-label="Jabar Running Festival">
+        <img src="assets/logo.png" alt="Logo Jabar Running Festival">
+        <span>JABAR RUNNING<br>FESTIVAL</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#tentang">Tentang</a><a href="#pengalaman">Pengalaman</a><a href="#galeri">Galeri</a><a href="#daftar">Pendaftaran</a>
+      </nav>
+      <a class="nav-cta" href="#daftar">IKUTI KESERUANNYA ↗</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <video class="hero-media" autoplay muted loop playsinline poster="assets/banner1.jpg">
+        <source src="assets/vidio.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade"></div>
+      <div class="wrap hero-content">
+        <div class="eyebrow">Run together · Feel the energy</div>
+        <h1>LEBIH DARI<br>SEKADAR <span>BERLARI.</span></h1>
+        <p class="hero-copy">Rayakan semangat, kebersamaan, dan energi positif dalam satu pengalaman lari. Saatnya melangkah, berlari, dan menciptakan cerita bersama.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#daftar">JADI BAGIAN DARI KAMI <span>↗</span></a>
+          <a class="btn-outline" href="#tentang">JELAJAHI EVENT</a>
+        </div>
+        <div class="hero-note"><span class="pulse"></span><span><b>JABAR RUNNING FESTIVAL</b> — Semangat berlari, energi tanpa batas.</span></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div><span>RUN WITH PURPOSE</span><b>✳</b><span>CELEBRATE EVERY STEP</span><b>✳</b><span>STRONGER TOGETHER</span><b>✳</b><span>RUN WITH PURPOSE</span><b>✳</b><span>CELEBRATE EVERY STEP</span></div></div>
+
+    <section class="intro" id="tentang">
+      <div class="wrap intro-grid">
+        <div>
+          <div class="eyebrow" style="color:#d9272e">Tentang festival</div>
+          <h2>SATU LANGKAH KECIL, <span>ENERGI BESAR.</span></h2>
+          <p>Jabar Running Festival hadir untuk menyatukan para pecinta olahraga dan siapa pun yang ingin merasakan serunya bergerak bersama. Bukan hanya tentang garis akhir, tetapi juga tentang proses, semangat, dan cerita yang tercipta di setiap langkah.</p>
+          <p>Siapkan dirimu untuk pengalaman yang penuh energi dan kebersamaan.</p>
+          <a class="btn" href="#daftar" style="background:#d9272e;color:#fff;margin-top:12px">KENALI CARA BERGABUNG ↗</a>
+        </div>
+        <div class="intro-visual">
+          <img src="assets/banner1.jpg" alt="Banner Jabar Running Festival" loading="lazy">
+          <div class="visual-tag">Move · Connect · Celebrate</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="pengalaman">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow" style="color:#d9272e">Pengalaman festival</div>
+          <h2>BUAT SETIAP LANGKAH JADI BERARTI.</h2>
+          <p>Datang dengan semangatmu. Pulang membawa pengalaman, kenangan, dan energi baru.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature"><div class="feature-num">01 / MOVE</div><h3>Aktif bersama</h3><p>Jadikan gerak dan olahraga sebagai momen positif yang bisa dinikmati bersama.</p></article>
+          <article class="feature"><div class="feature-num">02 / CONNECT</div><h3>Temukan komunitas</h3><p>Berkenalan, saling menyemangati, dan berbagi energi dengan sesama peserta.</p></article>
+          <article class="feature"><div class="feature-num">03 / CELEBRATE</div><h3>Rayakan pencapaian</h3><p>Setiap langkah punya arti. Nikmati perjalanan dan bangga pada pencapaianmu.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-section" id="galeri">
+      <div class="wrap">
+        <div class="banner">
+          <img src="assets/banner1.jpg" alt="Visual Jabar Running Festival" loading="lazy">
+          <div class="banner-caption"><small>The spirit starts here</small><h2>RASAKAN ENERGINYA.<br>JADILAH BAGIANNYA.</h2></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="join" id="daftar">
+      <div class="wrap join-grid">
+        <div>
+          <div class="eyebrow">Saatnya bergabung</div>
+          <h2>LANGKAHMU<br>DIMULAI <span>DI SINI.</span></h2>
+          <p>Tertarik mengikuti Jabar Running Festival? Kirim pesan kepada panitia melalui formulir ini. Lengkapi nomor WhatsApp panitia pada pengaturan kode agar pesan dapat dikirim.</p>
+        </div>
+        <form class="join-card" id="joinForm">
+          <h3>Hubungi panitia</h3>
+          <p>Isi data singkat berikut untuk memulai percakapan.</p>
+          <div class="field"><label for="nama">Nama</label><input id="nama" name="nama" type="text" placeholder="Nama lengkap" required></div>
+          <div class="field"><label for="wa">Nomor WhatsApp kamu</label><input id="wa" name="wa" type="tel" placeholder="Contoh: 08xxxxxxxxxx" required></div>
+          <div class="field"><label for="pesan">Pesan</label><textarea id="pesan" name="pesan" placeholder="Saya ingin mengetahui informasi pendaftaran..." required></textarea></div>
+          <button class="btn" type="submit">KIRIM PESAN VIA WHATSAPP ↗</button>
+          <p class="form-note">Formulir ini akan membuka WhatsApp setelah nomor panitia diatur pada kode website.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-brand"><img src="assets/logo.png" alt=""> JABAR RUNNING FESTIVAL</div>
+      <div>© <span id="year"></span> Jabar Running Festival. All rights reserved.</div>
+      <a href="#home">KEMBALI KE ATAS ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // GANTI dengan nomor WhatsApp panitia, format kode negara tanpa tanda +.
+    // Contoh format Indonesia: 62812xxxxxxxx
+    const WHATSAPP_NUMBER = "";
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+    menuBtn.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(isOpen));
+    });
+    navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+    }));
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("joinForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      if (!WHATSAPP_NUMBER) {
+        alert("Nomor WhatsApp panitia belum diatur. Buka file index.html, lalu isi WHATSAPP_NUMBER di bagian script.");
+        return;
+      }
+      const nama = document.getElementById("nama").value.trim();
+      const wa = document.getElementById("wa").value.trim();
+      const pesan = document.getElementById("pesan").value.trim();
+      const message = `Halo Panitia Jabar Running Festival!%0A%0ANama: ${encodeURIComponent(nama)}%0ANomor WhatsApp: ${encodeURIComponent(wa)}%0APesan: ${encodeURIComponent(pesan)}`;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
